@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<button onclick="qa()">click</button>
+<p id="2"></p>
+<script>
+    function qa() {
+        let a = document.getElementById('1').value;
+        let b = a*a;
+        document.getElementById('2').innerHTML='diện tích hình vuông='+b+'cm2';
+    }
+</script>
+</body>
+</html>

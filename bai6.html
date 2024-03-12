@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Giải phương trình bậc 1</h1>
+<h2>ax+b=0</h2>
+<body>
+<input type="text" id="1"> hệ số a
+<br>
+<input type="text" id="2"> hệ số b
+<br>
+<button onclick="qa()">tính x tính y</button>
+<br>
+<p id="3"></p>
+<script>
+    function qa(){
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('2').value;
+        let x = -b/a;
+        document.getElementById('3').innerHTML= 'nghiệm x='+x;
+    }
+</script>
+</body>
+</html>

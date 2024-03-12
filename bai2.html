@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<button onclick="q()">click</button>
+<p id="2"></p>
+<script>
+    function q() {
+        let a = +document.getElementById('1').value;
+        let b = a*3.2808;
+        document.getElementById('2').innerHTML=+b+"ft";
+    }
+</script>
+</body>
+</html>

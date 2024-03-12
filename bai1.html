@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1"> độ
+<button onclick="qaa()">click</button>
+<p id="2"></p>
+<script>
+    function qaa() {
+        let a = +document.getElementById('1').value;
+        let b = a*(9/5)+32;
+        document.getElementById('2').innerHTML=b+"F";
+    }
+</script>
+</body>
+</html>

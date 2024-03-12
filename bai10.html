@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Chương trình tính giá điện</h1>
+<body>
+<script>
+    let a = prompt("điện năng tiêu thụ (kWh)");
+    let giadienbanle;
+    if (a<=50){
+        giadienbanle = 1.678
+    } else if (a<=100) {
+        giadienbanle = 1.734
+    }else if (a<=200) {
+        giadienbanle = 2.014
+    }else if (a<=300) {
+        giadienbanle = 2.536
+    }else if (a<=400) {
+        giadienbanle = 2.834
+    }else  {
+        giadienbanle = 2.927
+    }
+    let b = a*giadienbanle;
+    alert("tiền điện="+b);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1"> cạnh góc vuông a (cm)
+<br>
+<input type="text" id="2"> cạnh góc vuông b (cm)
+<br>
+<button onclick="qa()">Tính diện tích</button>
+<p id="3"></p>
+<script>
+    function qa() {
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('1').value;
+        let c = a*b/2;
+        document.getElementById('3').innerHTML='diện tích hình tam giác='+c+'cm2';
+    }
+</script>
+</body>
+</html>

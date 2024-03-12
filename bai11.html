@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1> Tính thuế thu nhập cá nhân</h1>
+<body>
+<script>
+    let a = prompt('nhập số thu nhập hằng tháng (triệu)');
+    let thue;
+    if (a<=5){
+        thue=0.05
+    } else if (a<=10){
+        thue=0.1
+    }else if (a<=18){
+        thue=0.15
+    }else if (a<=32){
+        thue=0.2
+    }else if (a<=52){
+        thue=0.25
+    }else if (a<=80){
+        thue=0.3
+    }else {
+        thue=0.35
+    }
+    let b = a*thue;
+    alert('số tiền thuế phải đóng là '+b+'triệu')
+</script>
+</body>
+</html>

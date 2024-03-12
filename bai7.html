@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<h1>Giải phương trình bậc 2</h1>
+<h2>ax2+bx+c=0</h2>
+<body>
+<input type="text" id="1"> hệ số a
+<br>
+<input type="text" id="2"> hệ số b
+<br>
+<input type="text" id="3"> hệ số b
+<br>
+<button onclick="qa()">tính x </button>
+<br>
+<p id="4"></p>
+<script>
+  function qa(){
+    let a = +document.getElementById('1').value;
+    let b = +document.getElementById('2').value;
+    let c = +document.getElementById('3').value;
+    let x1,x2;
+    let delta = b*b-4*a*c;
+    if(delta<0){
+      document.getElementById('4').innerHTML= 'Vô nghiệm';
+    }
+    else if (delta>0){
+      x1 = (-b+Math.sqrt(delta))/(2*a);
+      x2 = (-b-Math.sqrt(delta))/(2*a);
+      document.getElementById('4').innerHTML= 'x1='+x1 +'      x2='+x2;
+    }
+     else {
+       x1 = -b/(2*a);
+      document.getElementById('4').innerHTML= 'x1=x2='+x1;
+    }
+
+  }
+</script>
+</body>
+</html>

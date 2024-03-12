@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1"> chiều dài (cm)
+<br>
+<input type="text" id="2"> chiều rộng (cm)
+<br>
+<button onclick="qa()">Tính diện tích</button>
+<p id="3"></p>
+<script>
+    function qa() {
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('1').value;
+        let c = a*b;
+        document.getElementById('3').innerHTML='diện tích hình chữ nhật='+c+'cm2';
+    }
+</script>
+</body>
+</html>
